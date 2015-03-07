@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Save The Relationship Timeline</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+      <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+      <link rel="icon" type="image/png" href="favicons/favicon-192x192.png" sizes="192x192">
+      <link rel="icon" type="image/png" href="favicons/favicon-160x160.png" sizes="160x160">
+      <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+      <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+    <script type='text/javascript' src='js/tabletop1.3.4.js'></script>
+    <script type='text/javascript' src='js/sheetsee.js'></script>
+
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Personal customised css -->
+<link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <style>
+      #Pagination {
+        margin: 10px 0px; 
+        padding-top: 10px; 
+        display: inline-block;}
+
+    #Pagination a {cursor: hand;}
+
+    .table-pagination {
+    width:100%;
+    margin: 0, auto;}
+    
+    .no-pag:hover {color: #acacac;}
+
+    input {border: none; border-bottom: 1px solid #333;margin: 10px 0px; width: 200px; font-size: 16px; padding-bottom: 6px;}
+    .tHeader {padding: 8px; cursor: pointer; text-align: center;} 
+    .container2{
+      margin: 3px 0;
+      -moz-box-shadow:    0px 3px 3px 0px black;
+  -webkit-box-shadow: 0px 3px 3px 0px black;
+  box-shadow:         0px 3px 3px 0px black;
+}
+
+.list-unstyled #ava
+{
+ font-size: 12px;
+}
+  </style>
+
+<body class="metro">
+  <div class="container scroll">
+<h1 class="text-center">Save The Relationship</h1>
+ <a class="btn btn-grey btn-block" style="color: white; height: 50px" role="button" href="index.html"><p class="text-center h4">Data Logging</p></a>
+    <br>
+    <div id="fullTable"></div>
+
+<script id="fullTable_template" type="text/html">
+
+  <table>
+    <tr>
+      {{#rows}}
+      <div class="row scroll">
+        <div class="col-sm-12">
+          <div class="row container2 vertical-align">
+          <div class="col-xs-3 text-center {{user}}">{{user}}</div>
+          <div class="col-xs-4 text-center {{ava}}">
+          <ul class="list-unstyled">
+          <li>{{status}}</li>
+          <li id="ava">{{ava}}</li></ul></div>
+          <div class="col-xs-5 comment text-left">{{comment}}</div>
+        </div>
+        </div>
+      </div>
+
+      {{/rows}}
+    <tr>
+  </table>
+</script>
+
+
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var URL = "1T2L8EEjSyyTIkHqLwyfCyjLHP_DuAruv28Lkxw7YxBI"
+    Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true, order:'Timestamp' } )
+  })
+
+  function showInfo(data) {
+    var tableOptions = {"data": data
+    , "pagination": 20, "tableDiv": "#fullTable", "filterDiv": "#fullTableFilter"}
+    Sheetsee.makeTable(tableOptions)
+    Sheetsee.initiateTableFilter(tableOptions)
+  }
+
+
+</script>
+
+</body>
+</html>
