@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Save The Relationship</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+      <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+      <link rel="icon" type="image/png" href="favicons/favicon-192x192.png" sizes="192x192">
+      <link rel="icon" type="image/png" href="favicons/favicon-160x160.png" sizes="160x160">
+      <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+      <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+      
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Personal customised css -->
+<link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+    <style type="text/css">
+
+    </style>
+
+<body class="metro">
+    <div class="container">
+     <h1 class="text-center">Save The Relationship</h1>
+                <a class="btn btn-grey btn-block" style="color: white; height: 50px" role="button" href="timeline.html"><p class="text-center h4">Timeline</p></a>
+
+            <form id="form" target="_self" onsubmit="" action="">
+                <h3 class="text-center"> 我是</h3>     
+                <div class="btn-group btn-group-justified" data-toggle="buttons" style="height: 50px;line-height:100px">  
+                    <label class="btn btn-red"><input id="user" type="radio" value="Amanda" name="user">
+                        <p class="h4">Amanda</p></label> 
+                    <label class="btn btn-blue"><input id="user" type="radio" value="Lok" name="user">
+                        <p class="h4">Lok</p></label>
+                </div>
+
+                <h3 class="text-center">状态</h3>
+                <div class="btn-toolbar" role="toolbar" aria-label="..." data-toggle="buttons" style="height: 250px"> 
+                <div class="btn-group btn-group-justified" role="group" aria-label="..."> 
+                    <label class="btn btn-green"> <input id="status" name="status" type="radio"  value="睡觉"> <p class="text-center h5">睡觉</p> </label>
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="起床"> <p class="text-center h5">起床 </p> </label>
+                </div>
+                <div class="btn-group btn-group-justified" role="group" aria-label="..."> 
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="冲凉中"><p class="text-center h5"> 冲凉中 </p></label>
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="做饭中"> <p class="text-center h5">做饭中</p></label>
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="游戏中"> <p class="text-center h5">游戏中</p></label>
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="作业中"> <p class="text-center h5">作业中</p></label>
+                </div>
+                <div class="btn-group btn-group-justified" role="group" aria-label="..."> 
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="散步中"> <p class="text-center h5">散步中</p></label>
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="移动中"> <p class="text-center h5">移动中</p></label>
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="外出活动"> <p class="text-center h5">外出活动</p></label>
+                </div>
+                <div class="btn-group btn-group-justified" role="group" aria-label="..."> 
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="上课中"> <p class="text-center h5">上课中</p></label>
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="Lunch Break"> <p class="text-center h5">Lunch Break</p></label>
+                </div>
+                <div class="btn-group btn-group-justified" role="group" aria-label="..."> 
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="想你"> <p class="text-center h5">想你</p></label>
+                    <label class="btn btn-green"><input id="status" name="status" type="radio"  value="亲一个"> <p class="text-center h5">亲一个</p></label>
+                </div>
+                </div>
+
+                <h3 class="text-center">空闲度</h3>
+                <div class="btn-toolbar" role="toolbar" aria-label="..." data-toggle="buttons" style="height: 50px"> 
+                <div class="btn-group btn-group-justified" role="group" aria-label="..."> 
+                        <label class="btn btn-yellow"><input id="ava" name="ava" 
+                        type="radio"  value="busy"> <p class="text-center h4">Busy </p></label>
+                        <label class="btn btn-yellow"><input id="ava" name="ava" 
+                       type="radio"  value="free"> <p class="text-center h4">Free </p></label>
+                </div>
+                </div>
+
+                <h3 class="text-center">详细说明</h3>
+                <input type="text" class="form-control" id="comment" name="comment">
+                    <input class="h3 btn btn-block btn-blue2" id="send" type="submit">
+            </form>
+    </div>
+
+
+        <script type="text/javascript">
+            function postToGoogle() {
+                var user = $("input[type='radio'][name='user']:checked").val();
+                var status = $("input[type='radio'][name='status']:checked").val();
+                var ava = $("input[type='radio'][name='ava']:checked").val();
+                var comment = $('#comment').val();
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/10Xc6b8g4nJGXsqVbUstAXw60_iH_uGH9YPGV_Bz2QqI/formResponse",
+                   data: { "entry.39164430":user, 
+                    "entry.481507923":status,
+                    "entry.1696492596":ava, 
+                    "entry.87449680":comment
+                    },
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function() {
+                           window.location.replace("timeline.html");
+                        },
+                        200: function() {
+                            window.location.replace("timeline.html");
+                        }
+                    }
+                });
+            }
+             
+            $(document).ready(function(){
+                $('#form').submit(function() {
+                    postToGoogle();
+                    return false;
+                });
+            });
+        </script>
+
+    </body>
+</html>
