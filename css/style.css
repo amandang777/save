@@ -27,6 +27,7 @@
     .metro {
     font-family:'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
     color: #F4F4F2;
+    vertical-align:middle;
     }
 
 body{
@@ -125,7 +126,6 @@ input[type="radio"] {
   border:1px solid #30302F;
   margin:1px 0;
   text-align: center;
-  vertical-align:middle;
 }
 
 .free,.busy
@@ -143,11 +143,13 @@ input[type="radio"] {
 .comment{
   font-size: 13px;
   background-color: #8A8A8A;
+  vertical-align:middle;
 }
 
 .P1,.P2
 {font-size: 16px;
   text-align: center;
+  vertical-align:middle;
   }
 
 .P1 {
