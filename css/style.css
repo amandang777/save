@@ -161,6 +161,7 @@ background-color: #F26964;}
 .vertical-align {
   display: flex;
   flex-direction: row;
+  vertical-align:center;
 }
 
 .vertical-align > [class^="col-"],
