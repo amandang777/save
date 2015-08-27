@@ -125,6 +125,7 @@ input[type="radio"] {
   border:1px solid #30302F;
   margin:1px 0;
   text-align: center;
+  vertical-align:middle;
 }
 
 .free,.busy
@@ -146,7 +147,8 @@ input[type="radio"] {
 
 .P1,.P2
 {font-size: 16px;
-  text-align: center;}
+  text-align: center;
+  }
 
 .P1 {
 background-color: #F26964;}
