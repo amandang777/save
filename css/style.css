@@ -124,6 +124,7 @@ input[type="radio"] {
   height:80px;
   border:1px solid #30302F;
   margin:1px 0;
+  text-align: center;
 }
 
 .free,.busy
